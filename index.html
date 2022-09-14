@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">少女折寿中...</div>
+  <script>
+    window.$docsify = {
+      name: 'Zurite Studio',
+      repo: 'ZuriteStudio/CompBio-Startup',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      relativePath: true,
+      search: {
+        maxAge: 3600000, // Expiration time, one hour
+        paths: 'auto',
+        // Localization
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Type to search'
+        },
+        // Localization
+        noData: {
+          '/zh-cn/': '似乎来到了法外之地...',
+          '/': 'Zurite Studio can\'t cover this far.'
+        },
+        // Headline depth, 1 - 6
+        depth: 6,
+        hideOtherSidebarContent: true,
+        // To avoid search index collision
+        // between multiple websites under the same domain
+        namespace: 'zuritelab.com',
+      },
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+</body>
+</html>
